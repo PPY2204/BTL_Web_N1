@@ -15,6 +15,7 @@ $(document).ready(function () {
   // nav
   function reloadTab(selectedTab) {
     $(`#${selectedTab}`).addClass("activeNav");
+    $(`#${selectedTab} a`).css("color", "#ffc1a6");
   }
   let pagePathName = window.location.pathname.split("/").pop();
   let pageName = pagePathName.split(".")[0];
