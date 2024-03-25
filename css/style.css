@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  -webkit-user-drag: none;
+}
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+input,
+select,
+textarea {
+  background-color: transparent;
+  outline: none;
+}
+button {
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: 0;
+}
+body {
+  min-height: 100vh;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+}
+.header {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  height: 110px;
+  background: #351810;
+  display: flex;
+}
+.header__logo {
+  position: relative;
+  top: 5px;
+  left: 342.36px;
+  width: 104.108px;
+  height: 106.537px;
+}
+.header__navBar {
+  position: relative;
+  display: flex;
+  width: 900px;
+  height: 100%;
+  list-style-type: none;
+  left: 370px;
+}
+.header__navBar li {
+  display: flex;
+  align-items: center;
+  margin-right: 65px;
+}
+.header__navBar li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.header__navBar li a:hover {
+  color: #ffc1a6;
+}
+
+.header__iconBox {
+  position: relative;
+  top: 40px;
+  left: 280px;
+  display: flex;
+  width: 199.18px;
+  height: 28px;
+}
+
+.header__iconBox img {
+    margin-right: 26px;
+}
+
+.activeNav {
+  border-top: solid 2px #ffc1a6;
+}
