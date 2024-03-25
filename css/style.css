@@ -85,7 +85,23 @@ body {
 }
 
 .header__iconBox img {
-    margin-right: 26px;
+  margin-right: 26px;
+}
+
+.header__iconBox__cartCount {
+  position: absolute;
+  left: 78px;
+  width: 14px;
+  height: 14px;
+  border-radius: 100%;
+  background: #ba5900;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 8px;
+  font-weight: 600;
 }
 
 .activeNav {
