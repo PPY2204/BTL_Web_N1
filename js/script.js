@@ -66,4 +66,23 @@ $(document).ready(function () {
       nextButton.click();
     }, 5000);
   }
+  //login
+  let isInteractingWithLoginForm = false;
+  $("#userButton").on("click", function () {
+    $(".header__iconBox__loginForm").css("display", "flex");
+  });
+
+  $(".header__iconBox__loginForm input[type='text']").on("click", function () {
+    isInteractingWithLoginForm = true;
+  });
+
+  $(".header__iconBox__loginForm input").on("blur", function () {
+    isInteractingWithLoginForm = false;
+  });
+
+  $(".header__iconBox__loginForm").mouseleave(function (e) {
+    if (!isInteractingWithLoginForm) {
+      $(this).css("display", "none");
+    }
+  });
 });
