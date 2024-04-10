@@ -105,6 +105,25 @@ body {
     transition: all 0.3s;
 }
 
+.header__iconBox__searchBox {
+    position: absolute;
+    top: 150%;
+    left: -15%;
+    width: 170%;
+    height: 160%;
+    border: 1px solid #000;
+    background: #FFF;
+    z-index: 1;
+}
+
+.header__iconBox__searchBox__right {
+ position: absolute;
+ right: 0;
+ height: 100%;
+ width: 20%;
+ background: #5B3236;
+}
+
 .header__iconBox__cartCount {
     position: absolute;
     left: 78px;
@@ -420,13 +439,13 @@ body {
 }
 
 .footer p {
-width: 212px;
-height: 163px;
-color: #FFC1A6;
-text-align: center;
-font-family: Oregano;
-font-size: 35px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+    width: 212px;
+    height: 163px;
+    color: #FFC1A6;
+    text-align: center;
+    font-family: Oregano;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
