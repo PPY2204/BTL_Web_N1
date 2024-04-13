@@ -5,65 +5,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link rel="stylesheet" href="../css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-
 </head>
 
 <body>
     <div class="container-fluid">
-        <div class="header">
-            <a href="home.html" class="header__logo"><img src="../assets/imgs/logo.png"></a>
+        <div class="header navbar navbar-expand-sm">
+            <div class="container">
+                <a href="home.html" class="navbar-brand"><img src="../assets/imgs/logo.png"
+                        style="width:80px;"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <ul class="header__navBar">
-                <li id="home"><a href="home.html">Trang chủ</a></li>
-                <li id="about"><a href="about.html">Giới thiệu</a></li>
-                <li id="product"><a href="product.html">Sản phẩm</a>
-
-                    <ul>
-                        <div class="header__navBar__arrowUp arrowUp"></div>
-                        <li><a href="">Bánh ngọt</a></li>
-                        <li><a href="">Bánh kem</a></li>
-                        <li><a href="">Bánh ngọt</a></li>
-                        <li><a href="">Bánh kem</a></li>
+                <div class="collapse navbar-collapse ms-5" id="collapsibleNavbar">
+                    
+                    <ul class="header__navBar navbar-nav">
+                        <li id="home">
+                            <a href="home.html" class="nav-link">Trang chủ</a>
+                        </li>
+                        <li id="about" class="nav-item mx-4">
+                            <a href="about.html" class="nav-link">Giới thiệu</a>
+                        </li>
+                        <li id="product" class="nav-item mx-4">
+                            <a href="product.html" class="nav-link">Sản phẩm</a>
+                            <ul>
+                                <div class="header__navBar__arrowUp arrowUp"></div>
+                                <li><a href="">Bánh ngọt</a></li>
+                                <li><a href="">Bánh kem</a></li>
+                                <li><a href="">Bánh ngọt</a></li>
+                                <li><a href="">Bánh kem</a></li>
+                            </ul>
+                        </li>
+                        <li id="member" class="nav-item mx-4"><a href="member.html" class="nav-link">Thành viên</a></li>
+                        <li id="contact" class="nav-item mx-4"><a href="contact.html" class="nav-link">Liên hệ</a></li>
                     </ul>
-                </li>
-                <li id="member"><a href="member.html">Thành viên</a></li>
-                <li id="contact"><a href="contact.html">Liên hệ</a></li>
-            </ul>
 
-            <div class="header__iconBox">
-                <img id="searchButton" src="../assets/imgs/searchIcon.png">
-                <div class="header__iconBox__searchBox">
-                    <div class="header__iconBox__searchBox__right"></div>
+                    <div class="header__container__collapse__iconBox ms-5">
+                        <img id="searchButton" src="../assets/imgs/searchIcon.png">
+                        <!-- <div class="header__container__collapse__iconBox__searchBox">
+                            <div class="header__container__collapse__iconBox__searchBox__right"></div>
+                        </div> -->
+                        <img id="cartButton" src="../assets/imgs/cartIcon.png">
+                        <img id="userButton" src="../assets/imgs/userIcon.png">
+                        <div class="header__container__collapse__iconBox__cartCount">0</div>
+                    </div>
                 </div>
-                <img id="cartButton" src="../assets/imgs/cartIcon.png">
-                <img id="userButton" src="../assets/imgs/userIcon.png">
-                <div class="header__iconBox__cartCount">0</div>
-                <!-- <div class="header__iconBox__loginForm">
-                    <div class="header__iconBox__loginForm__arrowUp arrowUp"></div>
-                    <span class="header__iconBox__loginForm__text--login">Đăng Nhập</span>
-                    <div class="header__iconBox__loginForm__line"></div>
-                    <form action="">
-                        <label for="accInput">Tên đăng nhập</label>
-                        <input type="text" name="accInput" id="accInput">
-                        <label for="passInput">Mật khẩu</label>
-                        <input type="password" name="passInput" id="passInput">
-                        <div class="header__iconBox__loginForm__rememberWrapper">
-                            <input type="checkbox" name="rememberInput" id="rememberInput">
-                            <label for="rememberInput" id="rememberLabel">Nhớ mật khẩu</label>
-                            <a href="">Quên mật khẩu?</a>
-
-                        </div>
-                        <button type="submit">Đăng nhập</button>
-                        <a href="" class="header__iconBox__loginForm__text--forgot">Chưa có tài khoản?</a>
-                    </form>
-                </div> -->
             </div>
         </div>
+
         <div class="slider">
             <div class="slider__list">
                 <div class="slider__list__item"><img src="../assets/imgs/slide1.png" alt=""></div>
