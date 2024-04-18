@@ -14,24 +14,36 @@
 
 <body>
     <div class="container-fluid">
-        <div class="header navbar navbar-expand-sm">
+        <div class="header navbar navbar-expand-md">
             <div class="container">
-                <a href="home.html" class="navbar-brand"><img src="../assets/imgs/logo.png"
-                        style="width:80px;"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <a href="home.html" class="navbar-brand d-none d-md-block ms-xl-5 ms-md-2"><img src="../assets/imgs/logo.png"
+                        width="80"></a>
+                <form class="header__searchPhoneForm d-flex d-md-none" role="search">
+                    <input class="form-control" type="search" placeholder="Nhập từ khoá" aria-label="Search">
+                    <div class="header__searchPhoneForm__button">
+                        <button type="submit" id="searchPhoneButton"><img src="../assets/imgs/searchIcon.png"
+                                width="40"></button>
+                    </div>
+                </form>
 
-                <div class="collapse navbar-collapse ms-5" id="collapsibleNavbar">
-                    
+                <div class="header__cartPhoneWrapper d-md-none">
+                    <img src="../assets/imgs/cartPhone.svg" alt="" width="53" height="38">
+                </div>
+
+                <div class="collapse navbar-collapse ms-xl-5 ms-md-2" id="collapsibleNavbar">
+
                     <ul class="header__navBar navbar-nav">
-                        <li id="home">
+                        <li id="home" class="">
                             <a href="home.html" class="nav-link">Trang chủ</a>
                         </li>
-                        <li id="about" class="nav-item mx-4">
+                        <li id="about" class="nav-item mx-xl-4 mx-md-3">
                             <a href="about.html" class="nav-link">Giới thiệu</a>
                         </li>
-                        <li id="product" class="nav-item mx-4">
+                        <li id="product" class="nav-item mx-xl-4 mx-md-3">
                             <a href="product.html" class="nav-link">Sản phẩm</a>
                             <ul>
                                 <div class="header__navBar__arrowUp arrowUp"></div>
@@ -41,18 +53,16 @@
                                 <li><a href="">Bánh kem</a></li>
                             </ul>
                         </li>
-                        <li id="member" class="nav-item mx-4"><a href="member.html" class="nav-link">Thành viên</a></li>
-                        <li id="contact" class="nav-item mx-4"><a href="contact.html" class="nav-link">Liên hệ</a></li>
+                        <li id="member" class="nav-item mx-xl-4 mx-md-3"><a href="member.html" class="nav-link">Thành
+                                viên</a></li>
+                        <li id="contact" class="nav-item mx-xl-4 mx-md-3"><a href="contact.html" class="nav-link">Liên
+                                hệ</a></li>
                     </ul>
-
-                    <div class="header__container__collapse__iconBox ms-5">
+                    <div class="header__iconBox ms-xl-5 ms-md-3 d-none d-md-flex">
                         <img id="searchButton" src="../assets/imgs/searchIcon.png">
-                        <!-- <div class="header__container__collapse__iconBox__searchBox">
-                            <div class="header__container__collapse__iconBox__searchBox__right"></div>
-                        </div> -->
                         <img id="cartButton" src="../assets/imgs/cartIcon.png">
                         <img id="userButton" src="../assets/imgs/userIcon.png">
-                        <div class="header__container__collapse__iconBox__cartCount">0</div>
+                        <span class="header__iconBox__cartCount">0</span>
                     </div>
                 </div>
             </div>

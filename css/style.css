@@ -52,11 +52,32 @@ body {
   background: #351810;
 }
 
+.header__searchPhoneForm input {
+   border-radius: 0;
+   height: 38px;
+   width: 200px;
+   border: none;
+   border: 1px solid black;
+}
+
+.header__searchPhoneForm__button {
+  background: #5b3236;
+  height: 38px;
+  width: 40px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__cartPhoneWrapper {
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
 .header__navBar > li > a {
   text-decoration: none;
   color: #fff;
   font-family: "Montserrat", sans-serif;
-  font-size: 18px;
   font-weight: 600;
 }
 
@@ -64,17 +85,17 @@ body {
   color: #ffc1a6;
 }
 
-.header__container__collapse__iconBox {
+.header__iconBox {
   position: relative;
   display: flex;
   height: 30px;
 }
 
-.header__container__collapse__iconBox img {
+.header__iconBox img {
   margin-right: 20px;
 }
 
-.header__container__collapse__iconBox img:hover {
+.header__iconBox img:hover {
   scale: 1.1;
   cursor: pointer;
   transition: all 0.3s;
@@ -99,7 +120,7 @@ body {
   background: #5b3236;
 }
 
-.header__container__collapse__iconBox__cartCount {
+.header__iconBox__cartCount {
   position: absolute;
   left: 78px;
   width: 14px;
@@ -429,7 +450,8 @@ body {
   font-weight: 400;
   line-height: normal;
 }
-html, body {
+html,
+body {
   height: 100%;
 }
 
