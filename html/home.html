@@ -15,13 +15,12 @@
 <body>
     <div class="container-fluid">
         <div class="header navbar navbar-expand-md">
-            <div class="container">
+            <div class="container-xl">
                 <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a href="home.html" class="navbar-brand d-none d-md-block ms-xl-5 ms-md-2"><img src="../assets/imgs/logo.png"
-                        width="80"></a>
+                
                 <form class="header__searchPhoneForm d-flex d-md-none" role="search">
                     <input class="form-control" type="search" placeholder="Nhập từ khoá" aria-label="Search">
                     <div class="header__searchPhoneForm__button">
@@ -34,16 +33,17 @@
                     <img src="../assets/imgs/cartPhone.svg" alt="" width="53" height="38">
                 </div>
 
-                <div class="collapse navbar-collapse ms-xl-5 ms-md-2" id="collapsibleNavbar">
-
+                <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+                    <a href="home.html" class="navbar-brand d-none d-md-flex me-xl-5 me-lg-0"><img src="../assets/imgs/logo.png"
+                        width="80"></a>
                     <ul class="header__navBar navbar-nav">
-                        <li id="home" class="">
+                        <li id="home" class="nav-item mx-md-1 mx-lg-4">
                             <a href="home.html" class="nav-link">Trang chủ</a>
                         </li>
-                        <li id="about" class="nav-item mx-xl-4 mx-md-3">
+                        <li id="about" class="nav-item mx-md-1 mx-lg-4">
                             <a href="about.html" class="nav-link">Giới thiệu</a>
                         </li>
-                        <li id="product" class="nav-item mx-xl-4 mx-md-3">
+                        <li id="product" class="nav-item mx-md-1 mx-lg-4">
                             <a href="product.html" class="nav-link">Sản phẩm</a>
                             <ul>
                                 <div class="header__navBar__arrowUp arrowUp"></div>
@@ -53,16 +53,20 @@
                                 <li><a href="">Bánh kem</a></li>
                             </ul>
                         </li>
-                        <li id="member" class="nav-item mx-xl-4 mx-md-3"><a href="member.html" class="nav-link">Thành
+                        <li id="member" class="nav-item mx-md-1 mx-lg-4"><a href="member.html" class="nav-link">Thành
                                 viên</a></li>
-                        <li id="contact" class="nav-item mx-xl-4 mx-md-3"><a href="contact.html" class="nav-link">Liên
+                        <li id="contact" class="nav-item mx-md-1 mx-lg-4"><a href="contact.html" class="nav-link">Liên
                                 hệ</a></li>
                     </ul>
-                    <div class="header__iconBox ms-xl-5 ms-md-3 d-none d-md-flex">
-                        <img id="searchButton" src="../assets/imgs/searchIcon.png">
-                        <img id="cartButton" src="../assets/imgs/cartIcon.png">
-                        <img id="userButton" src="../assets/imgs/userIcon.png">
-                        <span class="header__iconBox__cartCount">0</span>
+                    <div class="header__iconBox d-none d-md-flex ms-xl-4 ms-md-0">
+                        <img id="searchButton" src="../assets/imgs/searchIcon.png" class="mx-md-0 mx-lg-2">
+                        <div class="cartWrapper d-flex position-relative mx-md-0 mx-lg-2">
+                            <img id="cartButton" src="../assets/imgs/cartIcon.png">
+                            <span class="header__iconBox__cartCount">0</span>
+                        </div>
+                        
+                        <img id="userButton" src="../assets/imgs/userIcon.png" class="mx-md-0 mx-lg-2">
+                        
                     </div>
                 </div>
             </div>

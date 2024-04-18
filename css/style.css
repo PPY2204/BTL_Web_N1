@@ -50,6 +50,7 @@ body {
 .header {
   position: relative;
   background: #351810;
+  height: 100px;
 }
 
 .header__searchPhoneForm input {
@@ -74,6 +75,11 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.header__navBar > li {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
 .header__navBar > li > a {
   text-decoration: none;
   color: #fff;
@@ -89,10 +95,6 @@ body {
   position: relative;
   display: flex;
   height: 30px;
-}
-
-.header__iconBox img {
-  margin-right: 20px;
 }
 
 .header__iconBox img:hover {
@@ -122,7 +124,8 @@ body {
 
 .header__iconBox__cartCount {
   position: absolute;
-  left: 78px;
+  /* left: 78px; */
+  right: 0;
   width: 14px;
   height: 14px;
   border-radius: 100%;
