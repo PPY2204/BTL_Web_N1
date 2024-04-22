@@ -54,11 +54,11 @@ body {
 }
 
 .header__searchPhoneForm input {
-   border-radius: 0;
-   height: 38px;
-   width: 200px;
-   border: none;
-   border: 1px solid black;
+  border-radius: 0;
+  height: 38px;
+  width: 200px;
+  border: none;
+  border: 1px solid black;
 }
 
 .header__searchPhoneForm__button {
@@ -460,4 +460,155 @@ body {
 
 .container-fluid {
   height: 100%;
+}
+.section {
+  position: relative;
+  width: 100%;
+  background: url(../assets/imgs/backgroundLogin.png);
+  height: 1033px;
+  display: flex;
+  justify-content: center;
+}
+
+.section__loginForm {
+  position: absolute;
+  top: 129px;
+  text-transform: uppercase;
+  width: 650px;
+  height: 689px;
+  background: #fff;
+  filter: drop-shadow(0px 4px 4px rgba(14, 13, 13, 0.36));
+}
+
+.section__loginForm__title {
+  position: absolute;
+  color: #351810;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+  top: 50.18px;
+}
+
+.section__loginForm__line {
+  position: relative;
+  top: 127.58px;
+  width: 405.306px;
+  height: 4.568px;
+  background: linear-gradient(
+    90deg,
+    rgba(53, 24, 16, 0) 0%,
+    #351810 51%,
+    rgba(53, 24, 16, 0) 100%
+  );
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.section__loginForm form {
+  position: relative;
+  top: 158.87px;
+  width: 70%;
+  height: 404.005px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.section__loginForm form label {
+  color: #351810;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#accName,
+#password {
+  width: 100%;
+  height: 57.096px;
+  background: #f2f2f2;
+  border: none;
+}
+
+#accName:hover,
+#password:hover {
+  border: 1px solid #351810;
+}
+
+#rememberInput {
+  width: 22.393px;
+  height: 22.839px;
+}
+
+#rememberInputLabel {
+  position: relative;
+  bottom: 5px;
+  color: #351810;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+#passForget {
+  position: absolute;
+  right: 0;
+  color: #351810;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  line-height: 25px;
+}
+#checkboxInput {
+  width: 15px;
+}
+#section__form a {
+  font-size: 12px;
+  text-decoration: none;
+}
+#btnLogin {
+  position: absolute;
+  bottom: 60px;
+  color: white;
+  height: 79.935px;
+  background-color: #351810;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1.92px;
+}
+.section__loginForm__noAccount {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: #351810;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+#noaccount a {
+  color: #351810;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration-line: underline;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(70, 70, 70, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0.5rem;
+  background: #792725;
 }
