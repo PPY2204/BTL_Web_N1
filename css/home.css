@@ -121,3 +121,65 @@
   scale: 1.1;
   transition: all 0.3s;
 }
+
+.main__viewAllProduct {
+  margin-top: 20px;
+  width: 250px;
+  height: 50px;
+  background: #351810;
+  border-radius: 30px;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 50px;
+}
+
+.main__viewAllProduct a {
+  text-decoration: none;
+  color: white;
+}
+
+.main__viewAllProduct:hover {
+  scale: 1.1;
+  transition: all 0.3s;
+}
+
+.main__viewAllProduct:hover a {
+  color: #ffc1a6;
+}
+
+.main__contact {
+  margin-top: 39px;
+  min-height: 105px;
+  flex-wrap: wrap;
+}
+
+.main__contact__info {
+  position: relative;
+  width: 239px;
+  height: 100px;
+}
+
+.main__contact__info__title {
+  color: #351810;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.main__contact__info__line {
+  margin-top: 5px;
+  width: 75px;
+  height: 1px;
+  background: #351810;
+}
+
+.main__contact__info__text {
+  margin-top: 10px;
+  color: #351810;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
