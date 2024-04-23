@@ -1,0 +1,117 @@
+.Section__Member{
+    width: 100%;
+    height: 789px;
+    background-color: #FBF5E9;
+}
+
+.Footer__Member{
+    width: 100%;
+    height: 173px;
+    background-color: #351810;
+}
+
+
+.Section__Member .Section__Title h1{
+    font-weight: bold;
+    font-size: 70px;
+    color: #372632;
+    text-align: center;
+    padding: 40px;
+    
+}
+
+.Section__ListBox{
+    width: 100%;
+    height: 440px;
+    padding: 0px 25px 0px 25px;
+    display: flex;
+}
+
+.Section__ListBox .Box1,.Box2,.Box3,.Box4,.Box5,.Box6{
+    width: 270px;
+    height: 400px;
+    border: 1px solid blue;
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+.Section__ListBox .Box1 .row1{
+    width: 270px;
+    height: 282px;
+    border: 1px solid red;
+}
+
+.Section__ListBox .Box1 .row2{
+    width: 270px;
+    height: 118px;
+    border: 1px solid purple;
+}
+
+
+.Section__ListBox .Box2 .row1{
+    width: 270px;
+    height: 282px;
+    border: 1px solid red;
+}
+
+.Section__ListBox .Box2 .row2{
+    width: 270px;
+    height: 118px;
+    border: 1px solid purple;
+}
+
+.Section__ListBox .Box3 .row1{
+    width: 270px;
+    height: 282px;
+    border: 1px solid red;
+}
+
+.Section__ListBox .Box3 .row2{
+    width: 270px;
+    height: 118px;
+    border: 1px solid purple;
+}
+
+.Section__ListBox .Box4 .row1{
+    width: 270px;
+    height: 282px;
+    border: 1px solid red;
+}
+
+.Section__ListBox .Box4 .row2{
+    width: 270px;
+    height: 118px;
+    border: 1px solid purple;
+}
+
+.Section__ListBox .Box5 .row1{
+    width: 270px;
+    height: 282px;
+    border: 1px solid red;
+}
+
+.Section__ListBox .Box5 .row2{
+    width: 270px;
+    height: 118px;
+    border: 1px solid purple;
+}
+
+
+.Section__ListBox .Box6 .row1{
+    width: 270px;
+    height: 282px;
+    border: 1px solid red;
+}
+
+.Section__ListBox .Box6 .row2{
+    width: 270px;
+    height: 118px;
+    border: 1px solid purple;
+}
+
+
+
+
+
+
