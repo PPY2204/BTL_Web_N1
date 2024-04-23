@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oregano:ital@0;1&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
 
 *,
 *:before,
@@ -139,149 +140,6 @@ body {
   font-weight: 600;
 }
 
-.header__iconBox__loginForm {
-  position: absolute;
-  left: 3px;
-  top: 40px;
-  width: 122%;
-  height: 970%;
-  background: #fff;
-  filter: drop-shadow(0px 4px 4px rgba(14, 13, 13, 0.36));
-  border-radius: 5px;
-  z-index: 1;
-  display: none;
-  flex-direction: column;
-  align-items: center;
-}
-
-.header__iconBox__loginForm__text--login {
-  display: block;
-  margin-top: 11px;
-  width: 100%;
-  color: #351810;
-  text-align: center;
-  font-family: Montserrat;
-  font-size: 25px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-
-.header__iconBox__loginForm__line {
-  width: 181px;
-  height: 2px;
-  background: linear-gradient(
-    90deg,
-    rgba(53, 24, 16, 0) 0%,
-    #351810 51%,
-    rgba(53, 24, 16, 0) 100%
-  );
-}
-
-.header__iconBox__loginForm__arrowUp {
-  top: -10px;
-  left: 110px;
-}
-
-.header__iconBox__loginForm form {
-  margin-top: 5px;
-  width: 87%;
-}
-
-.header__iconBox__loginForm label {
-  color: #351810;
-  text-align: center;
-  font-family: Montserrat;
-  font-size: 11px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.8px;
-  text-transform: uppercase;
-}
-
-.header__iconBox__loginForm input {
-  width: 210px;
-  height: 25px;
-  border: 1px solid rgba(107, 107, 107, 0.1);
-  color: #351810;
-  font-family: Montserrat;
-  font-size: 11px;
-  font-weight: 700;
-  text-indent: 5px;
-}
-
-.header__iconBox__loginForm input:hover {
-  border-color: #351810;
-}
-
-.header__iconBox__loginForm__rememberWrapper {
-  position: relative;
-  display: flex;
-}
-
-.header__iconBox__loginForm__rememberWrapper a {
-  position: absolute;
-  text-decoration: none;
-  top: 7px;
-  right: 0;
-  height: 6px;
-  color: #351810;
-  font-weight: 700;
-  font-size: 8px;
-  font-family: Montserrat;
-  text-transform: uppercase;
-}
-
-.header__iconBox__loginForm__rememberWrapper a:hover {
-  cursor: pointer;
-  color: #593429;
-}
-
-#rememberInput {
-  width: 10px;
-  accent-color: #351810;
-}
-
-#rememberLabel {
-  position: absolute;
-  left: 12px;
-  top: 8px;
-  font-size: 8px;
-}
-
-.header__iconBox__loginForm button {
-  margin-top: 3px;
-  width: 100%;
-  height: 35px;
-  background: #351810;
-  color: #fff;
-  font-family: Montserrat;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-
-.header__iconBox__loginForm button:hover {
-  background: #593429;
-}
-
-.header__iconBox__loginForm__text--forgot {
-  text-decoration: none;
-  display: block;
-  width: 100%;
-  text-align: center;
-  margin-top: 12.5px;
-  color: #351810;
-  font-family: Montserrat;
-  font-size: 12px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.header__iconBox__loginForm__text--forgot:hover {
-  color: #593429;
-}
-
 .activeNav {
   border-top: solid 2px #ffc1a6;
 }
@@ -339,7 +197,7 @@ body {
 .slider {
   background: #d9d9d9;
   width: 100%;
-  height: 40vw;
+  height: 45vw;
   overflow: hidden;
   position: relative;
 }
@@ -453,14 +311,8 @@ body {
   font-weight: 400;
   line-height: normal;
 }
-html,
-body {
-  height: 100%;
-}
 
-.container-fluid {
-  height: 100%;
-}
+
 .section {
   position: relative;
   width: 100%;
