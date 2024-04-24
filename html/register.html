@@ -72,7 +72,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="section">
             <div class="section__bgColor"></div>
             <div class="section__signUpForm">
@@ -81,26 +81,33 @@
                 <form action="">
                     <div class="form-group pb-3">
                         <label for="account" id="name">Tên đăng nhập</label>
-                        <input type="text" class="form-control mt-2" name="account" id="accName">
+                        <input type="text" class="form-control mt-2" name="account" id="accName"
+                            pattern="^[a-zA-Z0-9]{4,8}$" title="Tên đăng nhập phải từ 4 đến 8 kí tự" required>
                     </div>
                     <div class="form-group pb-3">
                         <label for="phone" id="phone">Số điện thoại</label>
-                        <input type="text" class="form-control my-2" name="phone" id="phoneInput">
+                        <input type="text" class="form-control my-2" name="phone" id="phoneInput" pattern="^0[1-9]{9}"
+                            title="Số điện thoại phải bắt đầu bằng 0, bao gồm 10 số" required>
                     </div>
                     <div class="form-group pb-3">
                         <label for="email" id="email">Email</label>
-                        <input type="email" class="form-control my-2" name="email" id="emailInput">
+                        <input type="email" class="form-control my-2" name="email" id="emailInput"
+                            pattern="[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}" required>
                     </div>
                     <div class="form-group pb-3">
                         <label for="pass" id="pass">Mật khẩu</label>
-                        <input type="password" class="form-control my-2" name="pass" id="password">
+                        <input type="password" class="form-control my-2" name="pass" id="password"
+                            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&_])[A-Za-z\d$@$!%*?&_]{6,20}$"
+                            title="Mật khẩu phải bao gồm 1 chữ hoa, 1 chữ thường, 1 số, 1 kí tự đặc biệt và từ 6 đến 20 kí tự"
+                            required>
                     </div>
                     <div class="form-group pb-3">
                         <label for="passConfirm" id="passConfirm">Nhập lại mật khẩu</label>
-                        <input type="password" class="form-control my-2" name="passConfirm" id="passwordConfirm">
+                        <input type="password" class="form-control my-2" name="passConfirm" id="passwordConfirm"
+                            required>
                     </div>
                     <div>
-                        <button type="button" class="btn w-100" id="btnSignUp">ĐĂNG KÝ</button>
+                        <button type="submit" class="btn w-100" id="btnSignUp">ĐĂNG KÝ</button>
                     </div>
                     <div class="p-3 section__signUpForm__signIn">
                         <span id="signIn" class="py-1">Bạn đã có tài khoản?</span>
@@ -139,10 +146,14 @@
                         <button type="submit">Gửi</button>
                     </form>
                     <div class="footer__main__registerInfo__iconWrapper">
-                        <a href="https://www.youtube.com/channel/UCILn9XC8wjt6dXrpM-_lMdA"><img src="../assets/imgs/iconFacebook.svg" alt=""></a>
-                        <a href="https://www.youtube.com/channel/UCILn9XC8wjt6dXrpM-_lMdA"><img src="../assets/imgs/iconYoutube.svg" alt=""></a>
-                        <a href="https://www.youtube.com/channel/UCILn9XC8wjt6dXrpM-_lMdA"><img src="../assets/imgs/iconInstagram.svg" alt=""></a>
-                        <a href="https://www.youtube.com/channel/UCILn9XC8wjt6dXrpM-_lMdA"><img src="../assets/imgs/iconTelegram.svg" alt=""></a>
+                        <a href="https://www.youtube.com/channel/UCILn9XC8wjt6dXrpM-_lMdA"><img
+                                src="../assets/imgs/iconFacebook.svg" alt=""></a>
+                        <a href="https://www.youtube.com/channel/UCILn9XC8wjt6dXrpM-_lMdA"><img
+                                src="../assets/imgs/iconYoutube.svg" alt=""></a>
+                        <a href="https://www.youtube.com/channel/UCILn9XC8wjt6dXrpM-_lMdA"><img
+                                src="../assets/imgs/iconInstagram.svg" alt=""></a>
+                        <a href="https://www.youtube.com/channel/UCILn9XC8wjt6dXrpM-_lMdA"><img
+                                src="../assets/imgs/iconTelegram.svg" alt=""></a>
                     </div>
                 </div>
 
@@ -167,6 +178,14 @@
     </div>
 
     <script src="../js/script.js"></script>
+    <script>
+        $("#passwordConfirm").on("blur", function () {
+            if ($("#password").val() != $(this).val()) {
+                alert("Mật khẩu không khớp");
+                $(this).val("");
+            }
+        })
+    </script>
     </div>
 </body>
 
