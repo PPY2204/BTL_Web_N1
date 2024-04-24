@@ -273,6 +273,21 @@ body {
   transition: all 0.3s;
 }
 
+.footer__main__line {
+  width: 100%;
+  height: 1px;
+  background: #585050;
+}
+
+.footer__main > h1 {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
 ::-webkit-scrollbar {
   width: 0.5rem;
 }
