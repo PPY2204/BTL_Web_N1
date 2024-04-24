@@ -13,7 +13,9 @@ $(document).ready(function () {
   // nav
   function reloadTab(selectedTab) {
     if (
-      ["home", "contact", "member", "product", "about", "productInfo"].includes(selectedTab)
+      ["home", "contact", "member", "product", "about", "productInfo"].includes(
+        selectedTab
+      )
     ) {
       if (selectedTab === "productInfo") {
         selectedTab = "product";
@@ -74,9 +76,17 @@ $(document).ready(function () {
     }, 5000);
   }
 
+  function goToPage(url) {
+    if (url !== window.location.href) {
+        window.location.assign(url); 
+    } else {
+        window.location.reload();
+    }
+}
+
   // login button
   $("#userButton").on("click", function () {
-    window.location.href = "login.html";
+    goToPage("login.html")
   });
 
   // cart count update
@@ -85,11 +95,30 @@ $(document).ready(function () {
 
   // cart button
   $("#cartButton").on("click", function () {
-    window.location.href = "cart.html";
+    goToPage("cart.html")
   });
 
   // cart phone button
   $(".header__cartPhoneWrapper").on("click", function () {
-    window.location.href = "cart.html";
+    goToPage("cart.html")
+  });
+
+  // search button
+  $("#searchButton").on("click", function () {
+    if ($(".header__iconBox__searchBox").is(":visible")) {
+      $(".header__iconBox__searchBox").hide();
+      return;
+    }
+    $(".header__iconBox__searchBox").show();
+  });
+
+  $(".header__iconBox__searchBox__right").on("click", function(){
+    localStorage.setItem("searchValue", $(".header__iconBox__searchBox__left").val());
+    goToPage("product.html")
+  })
+  $("#headerSearchBox").on("submit", function(e){
+    e.preventDefault();
+    localStorage.setItem("searchValue", $(".header__iconBox__searchBox__left").val());
+    goToPage("product.html")
   });
 });

@@ -80,16 +80,61 @@ $(document).ready(function () {
          </div>
      </div>`;
     $(".main__product").html(productList);
-    $(".main__product").on("click", ".main__product__item", function () {
+    
+    $(".main__product").on("click", ".main__product__item__top", function () {
       productData.find((item) => {
         if (
           item.productName ===
-          $(this).find(".main__product__item__bottom__productName").text()
+          $(this)
+            .parent()
+            .find(".main__product__item__bottom__productName")
+            .text()
         ) {
           localStorage.setItem("currentProduct", JSON.stringify(item));
           window.location.href = "productDetail.html";
         }
       });
     });
+    $(".main__product").on(
+      "click",
+      ".main__product__item__bottom__addProduct",
+      function () {
+        productData.find((item) => {
+          if (
+            item.productName ===
+            $(this)
+              .parent()
+              .find(".main__product__item__bottom__productName")
+              .text()
+          ) {
+            const cartCount = localStorage.getItem("cartCount");
+            const newCartCount = cartCount ? parseInt(cartCount) + 1 : 1;
+            const cart = localStorage.getItem("cartList");
+            let newCart = cart ? JSON.parse(cart) : [];
+            const foundItem = newCart.find(
+              (element) => item.productName === element.productName
+            );
+            if (foundItem === undefined) {
+              localStorage.setItem("cartCount", newCartCount);
+              $(".header__iconBox__cartCount").text(newCartCount);
+              newCart.push(item);
+              localStorage.setItem("cartList", JSON.stringify(newCart));
+            }
+          }
+        });
+      }
+    );
   });
+  const searchValue = localStorage.getItem("searchValue");
+    if (searchValue){
+      $(".main__product__item__bottom__productName").each(function(){
+        console.log($(this).text().toLowerCase());
+        if ($(this).text().toLowerCase().includes(searchValue.toLowerCase())){
+          $(this).parent().parent().show();
+        } else {
+          $(this).parent().parent().hide();
+        }
+      });
+      localStorage.removeItem("searchValue");
+    }
 });
