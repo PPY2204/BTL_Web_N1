@@ -274,3 +274,8 @@
     width: 50px;
   }
 }
+@media only screen and (max-width: 767px) {
+  .slider {
+    padding-top: 0;
+  }
+}
