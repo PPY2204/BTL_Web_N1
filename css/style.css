@@ -263,8 +263,14 @@ body {
   height: 112px;
 }
 
-.footer__main__registerInfo__iconWrapper img {
- margin: 0 10px 0 0;
+.footer__main__registerInfo__iconWrapper a {
+ margin-right: 5px;
+}
+
+.footer__main__registerInfo__iconWrapper img:hover {
+  scale: 1.1;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
 ::-webkit-scrollbar {
