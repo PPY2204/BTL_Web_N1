@@ -152,50 +152,6 @@ body {
   height: 55px;
 }
 
-#product:hover > ul {
-  display: block;
-}
-
-#product > ul {
-  position: absolute;
-  display: none;
-  top: 80px;
-  width: 220px;
-  background: #fff;
-  z-index: 1;
-}
-
-#product > ul > li {
-  list-style-type: none;
-  padding: 20px;
-}
-
-#product > ul > li > a {
-  text-decoration: none;
-  color: #000;
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  font-weight: 550;
-}
-
-.arrowUp {
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-bottom: 10px solid #fff;
-}
-
-.header__navBar__arrowUp {
-  top: -10px;
-  left: 20px;
-}
-
-#product > ul > li > a:hover {
-  color: #e68b37;
-}
-
 .slider {
   background: #d9d9d9;
   width: 100%;

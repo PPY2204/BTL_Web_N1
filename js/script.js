@@ -15,8 +15,11 @@ $(document).ready(function () {
   // nav
   function reloadTab(selectedTab) {
     if (
-      ["home", "contact", "member", "product", "about"].includes(selectedTab)
+      ["home", "contact", "member", "product", "about", "productInfo"].includes(selectedTab)
     ) {
+      if (selectedTab === "productInfo") {
+        selectedTab = "product";
+      }
       $(`#${selectedTab}`).addClass("activeNav");
       $(`#${selectedTab} > a`).css("color", "#ffc1a6");
     }
@@ -46,6 +49,7 @@ $(document).ready(function () {
     }
     reloadSlider();
   });
+
   prevButton.on("click", () => {
     if (active - 1 < 0) {
       active = lengthItems;
@@ -71,6 +75,8 @@ $(document).ready(function () {
       nextButton.click();
     }, 5000);
   }
+
+  // login button
   $("#userButton").on("click", function () {
     window.location.href = "login.html";
   });

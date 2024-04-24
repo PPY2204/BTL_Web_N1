@@ -1,0 +1,113 @@
+.main {
+  width: 100%;
+  min-height: 800px;
+  background: #efefef;
+  flex-direction: column;
+}
+
+.main__productInfo {
+  margin-top: 50px;
+  width: 100%;
+  flex-wrap: wrap;
+  min-height: 412px;
+}
+
+.main__productInfo__productImageWrapper {
+  position: relative;
+  width: 408.933px;
+  height: 408.933px;
+  border-radius: 30px;
+  background: rgba(0, 0, 0, 0.14);
+}
+
+.main__productInfo__productImageWrapper span {
+  position: absolute;
+  width: 100%;
+  bottom: 34.76px;
+  text-align: center;
+  color: #351810;
+  font-family: Montserrat;
+  font-size: 21px;
+  font-weight: 400;
+}
+
+.main__productInfo__info {
+  position: relative;
+  max-width: 580px;
+  height: 412px;
+}
+
+.main__productInfo__info > div {
+  position: relative;
+  display: flex;
+}
+
+.main__productInfo__info__productName {
+  color: #351810;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: 400;
+}
+table th {
+  color: #351810;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 600;
+}
+table td {
+  color: #351810;
+  font-family: Montserrat;
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.main__productInfo__info__productPrice {
+  position: absolute;
+  bottom: 73px;
+  color: #351810;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.main__productInfo__info__addCart {
+  position: absolute;
+  bottom: 0;
+  width: 332px;
+  height: 56px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  background: #351810;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.main__productDescription {
+  width: 57%;
+}
+.main__productDescription__title {
+  color: #351810;
+  font-family: MonteCarlo;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.main__productDescription__des {
+  color: #351810;
+font-family: Montserrat;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+@media only screen and (max-width: 900px) {
+  .main__productDescription {
+    width: 80%;
+  }
+}
