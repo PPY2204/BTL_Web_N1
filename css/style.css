@@ -52,7 +52,7 @@ body {
 }
 
 .header {
-  position: fixed!important;
+  position: fixed !important;
   z-index: 1;
   background: #351810;
   height: 100px;
@@ -187,24 +187,84 @@ body {
   background: #212120;
 }
 
-.footer__logo {
-  position: absolute;
-  width: 177px;
-  height: 175px;
-  top: 39px;
-  left: 292px;
+.footer__main {
+  flex-wrap: wrap;
 }
 
-.footer p {
-  width: 212px;
-  height: 163px;
+.footer__main__logoWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.footer__main > div > h1 {
   color: #ffc1a6;
-  text-align: center;
+  margin-bottom: 15px;
   font-family: Oregano;
-  font-size: 35px;
+  font-size: 24px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.footer__main > div > p {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.footer__main__registerInfo {
+  width: 285px;
+  height: 95px;
+}
+
+.footer__main__registerInfo form {
+  display: flex;
+  width: 95%;
+  height: 23px;
+}
+
+.footer__main__registerInfo #emailInfo {
+  width: 183px;
+  height: 23px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(217, 217, 217, 0.1);
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Montserrat;
+  font-size: 8px;
+  font-weight: 600;
+  line-height: normal;
+  text-indent: 10px;
+}
+
+.footer__main__registerInfo button {
+  width: 40px;
+  height: 23px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.footer__main__registerInfo__iconWrapper {
+  margin-top: 10px;
+  width: 115px;
+  height: 25px;
+  display: flex;
+}
+
+.footer__main__bct {
+  width: 297px;
+  height: 112px;
+}
+
+.footer__main__registerInfo__iconWrapper img {
+ margin: 0 10px 0 0;
 }
 
 ::-webkit-scrollbar {
@@ -231,7 +291,6 @@ body {
     left: -100%;
   }
 }
-
 
 @keyframes growDown {
   0% {

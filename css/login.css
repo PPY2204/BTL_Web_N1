@@ -147,3 +147,18 @@
   font-weight: 500;
   text-decoration-line: underline;
 }
+
+@media only screen and (max-width: 655px) {
+  .section__loginForm {
+    width: 500px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .section__loginForm {
+    width: 420px;
+    height: 600px;
+  }
+  .section__loginForm__noAccount {
+    font-size: 13px;
+  }
+}
