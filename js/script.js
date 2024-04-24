@@ -87,4 +87,9 @@ $(document).ready(function () {
   $("#cartButton").on("click", function () {
     window.location.href = "cart.html";
   });
+
+  // cart phone button
+  $(".header__cartPhoneWrapper").on("click", function () {
+    window.location.href = "cart.html";
+  });
 });
