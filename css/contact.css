@@ -80,7 +80,6 @@
     display: flex;
     justify-content: center;
     align-self: center;
-    
 }
 
 .mainContact__right__form--name,
@@ -125,15 +124,14 @@
 
 @media only screen and (max-width: 450px) {
     .mainContact__right__form {
-        display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        width: 60%;
+        margin-left: 20%;
     }
-    .mainContact__right input, .mainContact__right textarea {
-        width: 90%;
-    }
-    #btnContact {
-        width: 90%;
+    #phone {
+        margin-top: 20px;
     }
   }
   
