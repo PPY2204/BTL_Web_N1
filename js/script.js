@@ -110,4 +110,8 @@ $(document).ready(function () {
     localStorage.setItem("searchValue", $(".header__iconBox__searchBox__left").val());
     goToPage("product.html")
   });
+
+  $(".navbar-toggler").on("click", function () {
+    $("#collapsibleNavbar").css("display", "block!important");
+  });
 });
