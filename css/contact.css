@@ -1,6 +1,7 @@
 .map {
    padding-top: 100px;
 }
+
 .mainContact{
     width: 100%;
     min-height: 445px;
@@ -56,9 +57,6 @@
 
 
 .mainContact__left__content__social{
-    /* position: relative;
-    top: 160px;
-    left: 100px; */
     display: flex;
     flex-direction: row;
     align-self: center;
