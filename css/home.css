@@ -134,19 +134,12 @@
   font-weight: 400;
   text-align: center;
   line-height: 50px;
-}
-
-.main__viewAllProduct a {
-  text-decoration: none;
   color: white;
 }
 
 .main__viewAllProduct:hover {
   scale: 1.1;
   transition: all 0.3s;
-}
-
-.main__viewAllProduct:hover a {
   color: #ffc1a6;
 }
 
