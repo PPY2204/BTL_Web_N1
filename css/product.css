@@ -105,7 +105,8 @@
   width: 45px;
 }
 
-.main__product__item__bottom__addProduct:hover, .main__product__item__top--image:hover {
+.main__product__item__bottom__addProduct:hover,
+.main__product__item__top--image:hover {
   cursor: pointer;
   scale: 1.1;
   transition: all 0.3s;
@@ -117,6 +118,9 @@
   .main__line {
     width: 500px;
     height: 4px;
+  }
+  .main__des {
+    width: 90%;
   }
 }
 
