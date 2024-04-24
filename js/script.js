@@ -2,11 +2,9 @@ $(document).ready(function () {
   // scroll
   function scrollFunction() {
     if ($(window).scrollTop() > 200) {
-      $(".header").addClass("activeHeader");
-      $(".header__logo").hide();
+      $(".navbar-brand").hide();
       $(".header__iconBox").hide();
     } else {
-      $(".header").removeClass("activeHeader");
       $(".header__logo").show();
       $(".header__iconBox").show();
     }
@@ -79,5 +77,14 @@ $(document).ready(function () {
   // login button
   $("#userButton").on("click", function () {
     window.location.href = "login.html";
+  });
+
+  // cart count update
+  const cartCount = localStorage.getItem("cartCount");
+  $(".header__iconBox__cartCount").text(cartCount | 0);
+
+  // cart button
+  $("#cartButton").on("click", function () {
+    window.location.href = "cart.html";
   });
 });

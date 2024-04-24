@@ -1,0 +1,161 @@
+.main {
+  position: relative;
+  width: 100%;
+  min-height: 1000px;
+  background: #efefef;
+  flex-direction: column;
+}
+
+.main__cartDetail {
+  flex-wrap: wrap-reverse;
+}
+
+.main__cartDetail__shippingDetails {
+  width: 650px;
+  height: 955px;
+}
+
+.main__cartDetail__shippingDetails span {
+  color: #351810;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.6px;
+}
+
+.main__cartDetail__shippingDetails input {
+  border-radius: 1px;
+  background: #a89f9f5e;
+  height: 55px;
+}
+.main__cartDetail__shippingDetails textarea {
+  border-radius: 1px;
+  background: #a89f9f5e;
+}
+.main__cartDetail__shippingDetails input::placeholder {
+  color: rgba(53, 24, 16, 0.3);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+}
+.main__cartDetail__shippingDetails input:focus,
+.main__cartDetail__shippingDetails textarea:focus {
+  box-shadow: none !important;
+  border: 1px solid #351810;
+}
+
+.main__cartDetail__shippingDetails input:hover,
+.main__cartDetail__shippingDetails textarea:hover {
+  border: 1px solid #351810;
+}
+
+.main__cartDetail__cartProduct {
+  width: 834px;
+}
+
+#buttonWrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#buttonWrapper button, #buttonWrapper a{
+  margin: 1%;
+}
+
+#payButton {
+  margin-top: 40px;
+  border-radius: 8px;
+  background: #ee9f1f;
+  width: 45%;
+  height: 55px;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1.44px;
+}
+
+#continueButton {
+  margin-top: 40px;
+  border-radius: 8px;
+  background: #351810;
+  width: 45%;
+  height: 55px;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1.44px;
+  line-height: 55px;
+  text-align: center;
+}
+
+#continueButton:hover {
+  cursor: pointer;
+}
+
+table th {
+  color: #351810;
+  font-family: Montserrat;
+  text-indent: 20px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.6px;
+}
+
+table td {
+  color: #351810;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1.44px;
+  text-indent: 20px;
+}
+
+td img {
+  max-width: 150;
+  max-height: 150px;
+}
+
+#tableLine {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(53, 24, 16, 0) 0%,
+    #351810 51%,
+    rgba(53, 24, 16, 0) 100%
+  );
+}
+
+.main__cartDetail__cartProduct label {
+  color: #351810;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1.44px;
+  text-indent: -20px;
+}
+
+#buyAmount {
+  width: 50%;
+  border: 1px solid #351810;
+  text-align: center;
+}
+
+#buyAmount:focus {
+  box-shadow: none !important;
+}
+
+#xButton:hover {
+  cursor: pointer;
+  scale: 1.1;
+  transition: all 0.3s;
+}
