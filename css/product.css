@@ -3,6 +3,7 @@
   min-height: 962px;
   background: #efefef;
   flex-direction: column;
+  padding-top: 100px;
 }
 
 .main__title {

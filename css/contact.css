@@ -1,5 +1,7 @@
+.map {
+   padding-top: 100px;
+}
 .mainContact{
-    position: relative;
     width: 100%;
     min-height: 445px;
     height: auto;

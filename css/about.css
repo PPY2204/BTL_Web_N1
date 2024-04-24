@@ -1,55 +1,59 @@
-.main h1{
-    font-family: MonteCarlo;
-    font-size: 80px;
-    margin-top: 50px;
-    color: #351810;
-    text-shadow: 2px 2px 4px ;
-}
-.main #subTitle1{
-    font-family: Metrophobic;
-    font-size: 35px;
-    color: #351810;
-    text-transform: uppercase;
-    
+.main {
+  padding-top: 100px;
+  background: #efefef;
 }
 
-.main #subTitle2{
-    font-family: Metrophobic;
-    font-size: 25px;
-    color: #351810;
-    margin-top: 50px;
+.main h1 {
+  font-family: MonteCarlo;
+  font-size: 80px;
+  margin-top: 50px;
+  color: #351810;
+  text-shadow: 2px 2px 4px;
+}
+.main #subTitle1 {
+  font-family: Metrophobic;
+  font-size: 35px;
+  color: #351810;
+  text-transform: uppercase;
 }
 
-.main #subTitle3{
-    font-family: Metrophobic;
-    font-size: 15px;
-    color: #351810;
-    margin-top: 50px;
+.main #subTitle2 {
+  font-family: Metrophobic;
+  font-size: 25px;
+  color: #351810;
+  margin-top: 50px;
 }
 
-.main #footer{
-    margin-top: 80px;
-    margin-left: 30px;
+.main #subTitle3 {
+  font-family: Metrophobic;
+  font-size: 15px;
+  color: #351810;
+  margin-top: 50px;
 }
-.main #logo{
-  width: 200px;  
+
+.main #footer {
+  margin-top: 80px;
+  margin-left: 30px;
+}
+.main #logo {
+  width: 200px;
   height: 200px;
 }
 
-.main #address1{
-    font-family: Inter;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-weight: bold;
-    color: #351810;
-    font-size: 15px;
-    margin-left: 20px;
+.main #address1 {
+  font-family: Inter;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #351810;
+  font-size: 15px;
+  margin-left: 20px;
 }
 
-.main #address3{
-    font-family: Inter;
-    line-height: 5px;
-    color: #351810;
-    font-size: 15px;
-    margin-left: 20px;
+.main #address3 {
+  font-family: Inter;
+  line-height: 5px;
+  color: #351810;
+  font-size: 15px;
+  margin-left: 20px;
 }

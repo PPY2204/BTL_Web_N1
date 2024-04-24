@@ -1,15 +1,4 @@
 $(document).ready(function () {
-  // scroll
-  function scrollFunction() {
-    if ($(window).scrollTop() > 200) {
-      $(".navbar-brand").hide();
-      $(".header__iconBox").hide();
-    } else {
-      $(".header__logo").show();
-      $(".header__iconBox").show();
-    }
-  }
-  $(window).scroll(scrollFunction);
   // nav
   function reloadTab(selectedTab) {
     if (
