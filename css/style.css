@@ -280,6 +280,8 @@ body {
 }
 
 .footer__main > h1 {
+  width: 100%;
+  text-align: center;
   color: #FFF;
   font-family: Montserrat;
   font-size: 12px;
