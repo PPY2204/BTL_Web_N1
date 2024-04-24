@@ -120,7 +120,6 @@ table td {
 }
 
 td img {
-  max-width: 150;
   max-height: 150px;
 }
 
@@ -158,4 +157,13 @@ td img {
   cursor: pointer;
   scale: 1.1;
   transition: all 0.3s;
+}
+
+@media only screen and (max-width: 500px) {
+  .main__cartDetail__cartProduct th {
+    font-size: 10px;
+  }
+  .main__cartDetail__cartProduct td, .main__cartDetail__cartProduct label {
+    font-size: 10px;
+  }
 }
