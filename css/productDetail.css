@@ -3,6 +3,7 @@
   min-height: 800px;
   background: #efefef;
   flex-direction: column;
+  padding-top: 100px;
 }
 
 .main__productInfo {
