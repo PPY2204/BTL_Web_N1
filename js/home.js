@@ -1,3 +1,11 @@
+const Toast = Swal.mixin({
+  toast: true,
+  position: "top-end",
+  showConfirmButton: false,
+  timer: 2000,
+  timerProgressBar: true,
+
+});
 const moneyFormat = Intl.NumberFormat("es-ES");
 const productData = [
   {
@@ -125,6 +133,7 @@ $(document).ready(function () {
     "click",
     ".main__product__item__bottom__addProduct",
     function () {
+      console.log("press")
       productData.find((item) => {
         if (
           item.productName ===
@@ -141,10 +150,19 @@ $(document).ready(function () {
             (element) => item.productName === element.productName
           );
           if (foundItem === undefined) {
+            Toast.fire({
+              icon: "success",
+              title: "Đã thêm sản phẩm vào giỏ hàng!",
+            });
             localStorage.setItem("cartCount", newCartCount);
             $(".header__iconBox__cartCount").text(newCartCount);
             newCart.push(item);
             localStorage.setItem("cartList", JSON.stringify(newCart));
+          } else {
+            Toast.fire({
+              icon: "error",
+              title: "Sản phẩm đã có trong giỏ hàng!",
+            });
           }
         }
       });
