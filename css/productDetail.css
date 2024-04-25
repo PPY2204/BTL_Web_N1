@@ -111,3 +111,9 @@ line-height: normal;
     width: 80%;
   }
 }
+
+@media only screen and (max-width: 476px) {
+  .main__productInfo__info__productName {
+    font-size: 30px;
+  }
+}
