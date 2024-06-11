@@ -16,7 +16,7 @@
 
 .section__signUpForm {
     position: absolute;
-    top: 103px;
+    top: 130px;
     text-transform: uppercase;
     width: 650px;
     height: 880px;
@@ -39,7 +39,7 @@
   .section__signUpForm__line {
     position: relative;
     top: 96.11px;
-    width: 398px;
+    width: 70%;
     height: 4.36px;
     background: linear-gradient(
       90deg,
@@ -135,3 +135,17 @@
   }
   
   
+@media only screen and (max-width: 655px) {
+  .section__signUpForm {
+    width: 500px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .section__signUpForm {
+    width: 380px;
+    /* height: 800px; */
+  }
+  .section__signUpForm__signIn {
+    font-size: 13px;
+  }
+}

@@ -311,6 +311,15 @@ body {
   }
 }
 
+@media only screen and (max-width: 767px) {
+  .header {
+    height: auto;
+  }
+  .header__navBar > li {
+    height: auto;
+  }
+}
+
 @media only screen and (min-width: 1010px) {
   .header__iconBox__searchBox {
     left: -100%;

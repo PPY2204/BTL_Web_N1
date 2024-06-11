@@ -107,7 +107,13 @@ $(document).ready(function () {
   })
   $("#headerSearchBox").on("submit", function(e){
     e.preventDefault();
+    localStorage.setItem("searchValue", $(this).find("input").val());
+    goToPage("product.html")
+  });
+  $("#headerSearchBox2").on("submit", function(e){
+    e.preventDefault();
     localStorage.setItem("searchValue", $(".header__iconBox__searchBox__left").val());
     goToPage("product.html")
   });
+  
 });

@@ -3,6 +3,7 @@
   min-height: 800px;
   background: #efefef;
   flex-direction: column;
+  padding-top: 100px;
 }
 
 .main__productInfo {
@@ -109,5 +110,11 @@ line-height: normal;
 @media only screen and (max-width: 900px) {
   .main__productDescription {
     width: 80%;
+  }
+}
+
+@media only screen and (max-width: 476px) {
+  .main__productInfo__info__productName {
+    font-size: 30px;
   }
 }

@@ -39,7 +39,7 @@
 .section__loginForm__line {
   position: relative;
   top: 127.58px;
-  width: 405.306px;
+  width: 70%;
   height: 4.568px;
   background: linear-gradient(
     90deg,
@@ -155,7 +155,7 @@
 }
 @media only screen and (max-width: 500px) {
   .section__loginForm {
-    width: 420px;
+    width: 380px;
     height: 600px;
   }
   .section__loginForm__noAccount {

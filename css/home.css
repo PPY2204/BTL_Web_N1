@@ -4,6 +4,9 @@
   padding-top: 100px;
   height: 51vw;
   overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .slider__list {
@@ -23,10 +26,7 @@
 
 .slider__buttons {
   position: absolute;
-  top: 50%;
-  left: 20px;
-  width: 95%;
-  padding-left: 15px;
+  width: 98%;
   display: flex;
   justify-content: space-between;
 }
@@ -272,5 +272,10 @@
   }
   .main__title__line {
     width: 50px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .slider {
+    padding-top: 50px;
   }
 }
